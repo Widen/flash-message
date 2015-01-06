@@ -1,9 +1,8 @@
-## jQuery Flash plugin v1.0
+## Flash Message Plugin
 
-A tiny jQuery plugin to show flash messages in an unobtrusive way.
+A tiny jQuery plugin to show flash messages
 
- - Created by Joel Moss (joel@developwithstyle.com)
- - https://github.com/joelmoss/jquery-flash
+This is a modified version of [jquery-flash](https://github.com/joelmoss/jquery-flash), originally created by [Joel Moss](https://github.com/joelmoss).
 
 
 #### Usage
@@ -27,8 +26,3 @@ To install, just include this javascript file and the accompanying CSS file into
 HTML page. And that's it!
 
 Oh and don't forget the 'close' image.
-
-
-
-If you need help, found a bug, or would like to contribute, head on over to
-https://github.com/joelmoss/jquery-flash
