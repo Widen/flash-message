@@ -22,7 +22,4 @@ contents of the element:
 
 #### Installation
 
-To install, just include this javascript file and the accompanying CSS file into your
-HTML page. And that's it!
-
-Oh and don't forget the 'close' image.
+`npm install flash-message`
