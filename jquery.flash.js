@@ -24,6 +24,9 @@
 
 (function($){
   $(function() {
+    var defaultOptions = {
+      timeout: 5000
+    };
     var flashTimeout;
     var flashDiv = '<div id="flash" style="display:none;"> \
 	                      <div class="flash_close"></div> \
@@ -33,6 +36,7 @@
 
     $.extend({
       flash: function(content, options) {
+        options = options || defaultOptions;
         var flash = $('#flash');
 
         var fadeAway = function() {
@@ -61,12 +65,16 @@
               if(flashTimeout) {
                 window.clearTimeout(flashTimeout);
               }
-              flashTimeout = window.setTimeout(fadeAway, 5000);
+              if(options.timeout) {
+                flashTimeout = window.setTimeout(fadeAway, options.timeout);
+              }
             });
 
         flash.find('.flash_close').click(function () {
           $('#flash').hide();
-          window.clearTimeout(flashTimeout);
+          if(flashTimeout) {
+            window.clearTimeout(flashTimeout);
+          }
         });
 
       }
